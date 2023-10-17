@@ -1,1 +1,1 @@
-multipass launch -c2 -m2G -d16G -n minkube-labs --cloud-init cloud-config.yml focal
+multipass launch -c2 -m2G -d16G -n minkube-lab --cloud-init cloud-config.yml focal

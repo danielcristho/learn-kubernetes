@@ -13,11 +13,12 @@ packages:
   - lsb-release
 
 runcmd:
-  # docker
+  # docker installation
   - curl -fsSL https://get.docker.com -o get-docker.sh
   - sudo sh get-docker.sh
   - sudo gpasswd -a ubuntu docker
-  # minikube
+
+  # minikube installation using deb
   - curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
   - sudo dpkg -i minikube_latest_amd64.deb
   - echo 'alias kubectl="minikube kubectl --"' >> /home/ubuntu/.bashrc
