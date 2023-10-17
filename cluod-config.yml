@@ -1,0 +1,27 @@
+timezone: Asia/Jakarta
+locale: ja_JP.utf-8
+
+repo_update: true
+repo_upgrade: all
+
+packages:
+  - curl
+  - apt-transport-https
+  - ca-certificates
+  - software-properties-common
+  - gnupg
+  - lsb-release
+
+runcmd:
+  # docker
+  - curl -fsSL https://get.docker.com -o get-docker.sh
+  - sudo sh get-docker.sh
+  - sudo gpasswd -a ubuntu docker
+  # minikube
+  - curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64
+  - sudo install minikube-linux-arm64 /usr/local/bin/minikube
+  - echo 'alias kubectl="minikube kubectl --"' >> /home/ubuntu/.bashrc
+  - minikube start
+
+# ssh_authorized_keys:
+#   - ssh-rsa
