@@ -1,1 +1,1 @@
-multipass launch -c2 -m2G -d16G -n learn-kube --cloud-init cloud-config.yaml focal
+multipass launch -c2 -m2G -d16G -n learn-kube --cloud-init cloud-config.yml focal
