@@ -24,5 +24,12 @@ runcmd:
   - echo 'alias kubectl="minikube kubectl --"' >> /home/ubuntu/.bashrc
   - minikube start
 
+users:
+  - default
+  - name: kube
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+    - ssh-rsa
+
 # ssh_authorized_keys:
 #   - ssh-rsa
