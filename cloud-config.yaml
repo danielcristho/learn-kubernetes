@@ -29,7 +29,7 @@ users:
   - name: kube
     sudo: ALL=(ALL) NOPASSWD:ALL
     ssh_authorized_keys:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDFC01qR1I8APMYIdl8edugapJb9DvQtUtesP4E+YiX11nxgS4mY/ks1k1xV2hTtpuf8EDyka5ANojT7B4qkHgE9vmC8bjWzu8IDcI2uui5fvb4PEBh2pZi+GiEG/ICb/tBjsEmXoOOB7bhULwYzGBUPf+f4bGABlhx6JPWynFFuUd9L0AIQSoERG+d/V8ScY9Vkzgl1ZnvotSGlLAUKZ+bMFiEtuaC50bA/JNqP+RQGSfP8uEvz6w3XKBC7pTpFde9q+5cYFai96tbzUuFs6WHDDIxj995cumfJkP2cO10ddbRVrb3ohZ0KcHNyjgqAcqja6dXyrjZP9Brm3YfvT3DqPS9Z4szw8a6i0flV86axxp6ilJEsq1nDERkBInRs7oP40F1BfSxi18EW5MipCTxYfs8S+wckQ03ojsN0wiCE4GEOSRPgNrCQGtskH5pn8SAWkasavzh3yLdOepe57wgdLieWzWxXv3OB/psXTEfrbqcxP/t+K60Mge4zcMv/Ck= kube
+    - ssh-rsa <SSH_KEYS>
 
 # ssh_authorized_keys:
 #   - ssh-rsa
