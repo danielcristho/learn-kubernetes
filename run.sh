@@ -1,1 +1,1 @@
-multipass launch -c2 -m2G -d16G -n kubelab --cloud-init cloud-init.yaml focal
+multipass launch -c2 -m2G -d16G -n kubelab --cloud-init cloud-init.yaml minikube
