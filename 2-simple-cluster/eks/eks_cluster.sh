@@ -1,0 +1,1 @@
+eksctl create cluster --name ngoprek-cluster

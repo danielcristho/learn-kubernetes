@@ -1,0 +1,1 @@
+kind create cluster --wait 5m
