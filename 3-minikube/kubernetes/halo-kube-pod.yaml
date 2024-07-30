@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: halo-kube
+  labels:
+    componets: web
+spec:
+  containers:
+    - name: halo-kube
+      image: ngoprek/halo-kube
+      ports:
+          - containerPort: 80

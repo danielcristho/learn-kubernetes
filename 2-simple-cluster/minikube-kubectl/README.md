@@ -1,8 +1,6 @@
-# Learn Kubernetes
+Minikube
 
-## Minikube
-
-### Usage
+Usage
 
 Using Multipass and cloud-init.
 

@@ -1,8 +1,8 @@
 timezone: Asia/Jakarta
 locale: id_ID.utf-8
 
-repo_update: true
-repo_upgrade: all
+
+# repo_upgrade: all
 
 packages:
   - curl
@@ -23,6 +23,8 @@ runcmd:
   - sudo dpkg -i minikube_latest_amd64.deb
   - echo 'alias kubectl="minikube kubectl --"' >> /home/ubuntu/.bashrc
   - minikube start
+  - kubectl label node node-1 node-role.kubernetes.io/worker=worker
+
 
 # users:
 #   - default

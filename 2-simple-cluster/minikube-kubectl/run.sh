@@ -1,1 +1,1 @@
-multipass launch -c2 -m2G -d16G -n kubelab --cloud-init cloud-config.yaml minikube
+multipass launch -c2 -m4G -d40G -n ngoprek-kubernetes --cloud-init cloud-config.yaml minikube
